@@ -24,8 +24,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* Use standard block layout so the root can span full viewport width */
   min-width: 320px;
   min-height: 100vh;
 }
