@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import WhyChoose from "./components/WhyChoose";
-import Portfolio from "./components/Portfolio";
+import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import GoogleReviews from "./components/GoogleReviews";
 import Contact from "./components/Contact";
@@ -29,7 +29,7 @@ function App() {
 
     // Observe elements for animation
     const animatedElements = document.querySelectorAll(
-      ".service-card, .about__feature, .why-choose__item, .testimonial, .portfolio__item"
+      ".service-card, .about__feature, .why-choose__item, .testimonial, .gallery__item"
     );
 
     animatedElements.forEach((el) => {
@@ -67,7 +67,7 @@ function App() {
       <About />
       <Services />
       <WhyChoose />
-      <Portfolio />
+      <Gallery />
       <Testimonials />
       <GoogleReviews />
       <Contact />

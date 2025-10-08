@@ -95,13 +95,13 @@ export default function Header() {
                 </li>
                 <li>
                   <a
-                    href="#portfolio"
+                    href="#gallery"
                     className={`header__nav-link ${
-                      activeSection === "portfolio" ? "active" : ""
+                      activeSection === "gallery" ? "active" : ""
                     }`}
-                    onClick={(e) => handleLinkClick(e, "#portfolio")}
+                    onClick={(e) => handleLinkClick(e, "#gallery")}
                   >
-                    Portfolio
+                    Gallery
                   </a>
                 </li>
                 <li>
