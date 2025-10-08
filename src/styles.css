@@ -878,14 +878,18 @@ body {
     line-height: 1.5;
     margin-bottom: 8px;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    display: box;
     -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    box-orient: vertical;
     overflow: hidden;
     transition: all 0.2s ease;
 }
 
 .google-review-card__text.expanded {
     -webkit-line-clamp: unset;
+    line-clamp: unset;
 }
 
 .google-review-card__read-more {
@@ -1518,5 +1522,62 @@ body {
 
     .section__title-main {
         font-size: 1.8rem;
+    }
+}
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+    padding: 1.5rem;
+}
+
+.modal-dialog {
+    background: var(--white);
+    color: var(--dark-gray);
+    width: 100%;
+    max-width: 760px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--medium-gray);
+}
+
+.modal-body {
+    padding: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    .modal-dialog {
+        max-width: 100%;
+        height: auto;
     }
 }
