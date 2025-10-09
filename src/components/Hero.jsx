@@ -33,7 +33,7 @@ export default function Hero() {
           <div className="hero__image">
             <div className="hero__image-container">
               <img
-                src="/images/heroes/Hero_waterproofing_professional_image_66817831.png"
+                src="/images/heroes/Hero_waterproofing_professional_image.png"
                 alt="Professional waterproofing services"
                 className="hero__img"
                 id="heroImage"
