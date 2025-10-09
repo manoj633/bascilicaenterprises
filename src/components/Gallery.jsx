@@ -1,24 +1,20 @@
+import { useState } from "react";
+import { projects, categories } from "../data/galleryData";
+import BeforeAfterSlider from "./BeforeAfterSlider";
+import "../styles/Gallery.css";
+
 export default function Gallery() {
-  const projects = [
-    {
-      image:
-        "/attached_assets/generated_images/Portfolio_roof_project_dbcad76b.png",
-      title: "Residential Roof Waterproofing",
-      description: "Complete terrace waterproofing solution",
-    },
-    {
-      image:
-        "/attached_assets/generated_images/Portfolio_bathroom_project_82620521.png",
-      title: "Bathroom Waterproofing",
-      description: "Premium bathroom leak protection",
-    },
-    {
-      image:
-        "/attached_assets/generated_images/Portfolio_commercial_project_61d4165c.png",
-      title: "Commercial Building",
-      description: "Large-scale waterproofing project",
-    },
-  ];
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const filteredProjects =
+    selectedCategory === "all"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
 
   return (
     <section className="gallery" id="gallery">
@@ -26,27 +22,107 @@ export default function Gallery() {
         <div className="section__header">
           <h2 className="section__title">
             <span className="section__title-main">Our Project Gallery</span>
-            <span className="section__title-sub">Quality Work Showcase</span>
+            <span className="section__title-sub">
+              Before & After Transformations
+            </span>
           </h2>
+
+          <div className="gallery__filters">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                className={`gallery__filter-btn ${
+                  selectedCategory === category.id
+                    ? "gallery__filter-btn--active"
+                    : ""
+                }`}
+                onClick={() => setSelectedCategory(category.id)}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
         </div>
 
-        <div className="gallery__grid">
-          {projects.map((project, index) => (
-            <div key={index} className="gallery__item">
-              <div className="gallery__image">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  id={`portfolioImage${index + 1}`}
-                />
-                <div className="gallery__overlay">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
+        {selectedProject ? (
+          <div className="gallery__project-details">
+            <button
+              className="gallery__back-btn"
+              onClick={() => setSelectedProject(null)}
+            >
+              ← Back to Gallery
+            </button>
+
+            <h3 className="gallery__project-title">{selectedProject.title}</h3>
+            <p className="gallery__project-description">
+              {selectedProject.description}
+            </p>
+
+            <div className="gallery__slider-container">
+              <BeforeAfterSlider
+                beforeImage={selectedProject.beforeImage}
+                afterImage={selectedProject.afterImage}
+              />
+            </div>
+
+            <div className="gallery__project-info">
+              <div className="gallery__project-details-grid">
+                <div className="gallery__detail-item">
+                  <span className="gallery__detail-label">Location:</span>
+                  <span className="gallery__detail-value">
+                    {selectedProject.details.location}
+                  </span>
+                </div>
+                <div className="gallery__detail-item">
+                  <span className="gallery__detail-label">Area Covered:</span>
+                  <span className="gallery__detail-value">
+                    {selectedProject.details.area}
+                  </span>
+                </div>
+                <div className="gallery__detail-item">
+                  <span className="gallery__detail-label">Duration:</span>
+                  <span className="gallery__detail-value">
+                    {selectedProject.details.duration}
+                  </span>
                 </div>
               </div>
+
+              <div className="gallery__features">
+                <h4>Key Features:</h4>
+                <ul>
+                  {selectedProject.details.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ) : (
+          <div className="gallery__grid">
+            {filteredProjects.map((project) => (
+              <div
+                key={project.id}
+                className="gallery__item"
+                onClick={() => handleProjectClick(project)}
+              >
+                <div className="gallery__image">
+                  <img
+                    src={project.thumbnailAfter}
+                    alt={project.title}
+                    loading="lazy"
+                  />
+                  <div className="gallery__overlay">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <button className="gallery__view-btn">
+                      View Transformation
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
