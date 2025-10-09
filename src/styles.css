@@ -938,6 +938,22 @@ body {
     color: #1a73e8;
 }
 
+/* Filled star state (when using font-awesome icons) */
+.google-review-card__stars .fa-star {
+    color: #ddd;
+    /* default empty star */
+}
+
+.google-review-card__stars .fa-star.filled {
+    color: #fbbc04;
+    /* filled star color */
+}
+
+.google-review-card__text--empty {
+    font-style: italic;
+    color: var(--medium-gray);
+}
+
 .google-carousel__btn {
     position: absolute;
     top: 50%;

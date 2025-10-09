@@ -65,11 +65,11 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Services />
-      <WhyChoose />
-      <Gallery />
       <Testimonials />
       <GoogleReviews />
+      <Gallery />
+      <Services />
+      <WhyChoose />
       <Contact />
       <Footer />
     </>
