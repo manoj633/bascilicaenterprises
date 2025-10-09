@@ -26,8 +26,7 @@ Benefits:
 ✓ Prevents internal wall dampness
 ✓ Energy-efficient cooling due to heat reflection
 ✓ 5-year warranty on workmanship`,
-      image:
-        "/attached_assets/gallery/optimized/terrace-waterproofing-1-600x450.webp",
+      image: "/images/optimized/terrace-waterproofing-1-600x450.webp",
     },
     {
       icon: "fa-bath",
@@ -49,8 +48,7 @@ Benefits:
 ✓ Stops mold and mildew growth
 ✓ Protects underlying structure
 ✓ 7-year performance warranty`,
-      image:
-        "/attached_assets/gallery/optimized/bathroom-waterproofing-1-600x450.webp",
+      image: "/images/optimized/bathroom-waterproofing-1-600x450.webp",
     },
     {
       icon: "fa-building",
@@ -72,7 +70,7 @@ Benefits:
 ✓ Reduces maintenance costs
 ✓ Improves building aesthetics
 ✓ 3-year protection guarantee`,
-      image: "/attached_assets/gallery/optimized/external-wall-1-600x450.webp",
+      image: "/images/optimized/external-wall-1-600x450.webp",
     },
     {
       icon: "fa-water",
@@ -95,7 +93,7 @@ Benefits:
 ✓ Easy maintenance
 ✓ 5-year durability guarantee`,
       image:
-        "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
     {
       icon: "fa-swimming-pool",
@@ -118,7 +116,7 @@ Benefits:
 ✓ Crack-bridging capability
 ✓ 10-year service life`,
       image:
-        "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
     {
       icon: "fa-seedling",
@@ -140,7 +138,7 @@ Benefits:
 ✓ Protects building structure
 ✓ Long-term durability`,
       image:
-        "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
     {
       icon: "fa-fill-drip",
@@ -163,7 +161,7 @@ Benefits:
 ✓ Fast curing time
 ✓ Lifetime warranty`,
       image:
-        "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
     {
       icon: "fa-tint",
@@ -186,7 +184,7 @@ Benefits:
 ✓ Non-destructive application
 ✓ 3-year warranty`,
       image:
-        "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
   ];
 
