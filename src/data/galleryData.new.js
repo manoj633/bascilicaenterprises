@@ -1,3 +1,10 @@
+export const categories = [
+  { id: "all", label: "All Projects" },
+  { id: "residential", label: "Residential" },
+  { id: "commercial", label: "Commercial" },
+  { id: "bathroom", label: "Bathroom" },
+];
+
 export const projects = [
   {
     id: 1,
@@ -6,10 +13,13 @@ export const projects = [
     description:
       "Complete terrace waterproofing solution with 10-year guarantee",
     category: "residential",
-    beforeImage: "/images/projects/residential/before.jpg",
-    afterImage: "/images/projects/residential/after.png",
-    thumbnailBefore: "/images/optimized/terrace-waterproofing-1-400x300.webp",
-    thumbnailAfter: "/images/optimized/terrace-waterproofing-1-400x300.webp",
+    beforeImage: "/attached_assets/gallery/terrace-waterproofing-1.jpg",
+    afterImage:
+      "/attached_assets/generated_images/Portfolio_roof_project_dbcad76b.png",
+    thumbnailBefore:
+      "/attached_assets/gallery/optimized/terrace-waterproofing-1-400x300.webp",
+    thumbnailAfter:
+      "/attached_assets/gallery/optimized/terrace-waterproofing-1-400x300.webp",
     details: {
       location: "Bangalore, Karnataka",
       area: "2000 sq ft",
@@ -27,8 +37,9 @@ export const projects = [
     title: "Residential Project Overview",
     description: "Comprehensive waterproofing solution for modern homes",
     category: "residential",
-    image: "/images/team/About_us_team_photo_119d9b8a.png",
-    thumbnail: "/images/optimized/About_us_team_photo_119d9b8a-400x300.webp",
+    image: "/attached_assets/generated_images/About_us_team_photo_119d9b8a.png",
+    thumbnail:
+      "/attached_assets/gallery/optimized/About_us_team_photo_119d9b8a-400x300.webp",
     details: {
       location: "Whitefield, Bangalore",
       area: "1800 sq ft",
@@ -47,10 +58,13 @@ export const projects = [
     description:
       "Premium bathroom leak protection with modern waterproofing technology",
     category: "bathroom",
-    beforeImage: "/images/projects/bathroom/before.jpg",
-    afterImage: "/images/projects/bathroom/after.png",
-    thumbnailBefore: "/images/optimized/bathroom-waterproofing-1-400x300.webp",
-    thumbnailAfter: "/images/optimized/bathroom-waterproofing-1-400x300.webp",
+    beforeImage: "/attached_assets/gallery/bathroom-waterproofing-1.jpg",
+    afterImage:
+      "/attached_assets/generated_images/Portfolio_bathroom_project_82620521.png",
+    thumbnailBefore:
+      "/attached_assets/gallery/optimized/bathroom-waterproofing-1-400x300.webp",
+    thumbnailAfter:
+      "/attached_assets/gallery/optimized/bathroom-waterproofing-1-400x300.webp",
     details: {
       location: "Mysore, Karnataka",
       area: "120 sq ft",
@@ -69,9 +83,9 @@ export const projects = [
     description: "State-of-the-art bathroom waterproofing solution",
     category: "bathroom",
     image:
-      "/images/equipment/Professional_waterproofing_tools_and_equipment_c54a2057.png",
+      "/attached_assets/generated_images/Professional_waterproofing_tools_and_equipment_c54a2057.png",
     thumbnail:
-      "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-400x300.webp",
+      "/attached_assets/gallery/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-400x300.webp",
     details: {
       location: "HSR Layout, Bangalore",
       area: "100 sq ft",
@@ -89,10 +103,13 @@ export const projects = [
     title: "Commercial Building Exterior",
     description: "Large-scale waterproofing project for commercial complex",
     category: "commercial",
-    beforeImage: "/images/projects/commercial/before.jpg",
-    afterImage: "/images/projects/commercial/after.png",
-    thumbnailBefore: "/images/optimized/external-wall-1-400x300.webp",
-    thumbnailAfter: "/images/optimized/external-wall-1-400x300.webp",
+    beforeImage: "/attached_assets/gallery/external-wall-1.jpg",
+    afterImage:
+      "/attached_assets/generated_images/Portfolio_commercial_project_61d4165c.png",
+    thumbnailBefore:
+      "/attached_assets/gallery/optimized/external-wall-1-400x300.webp",
+    thumbnailAfter:
+      "/attached_assets/gallery/optimized/external-wall-1-400x300.webp",
     details: {
       location: "Electronic City, Bangalore",
       area: "5000 sq ft",
@@ -110,8 +127,9 @@ export const projects = [
     title: "Commercial Complex Protection",
     description: "Comprehensive waterproofing for business spaces",
     category: "commercial",
-    image: "/images/team/About_us_team_photo_119d9b8a.png",
-    thumbnail: "/images/optimized/About_us_team_photo_119d9b8a-400x300.webp",
+    image: "/attached_assets/generated_images/About_us_team_photo_119d9b8a.png",
+    thumbnail:
+      "/attached_assets/gallery/optimized/About_us_team_photo_119d9b8a-400x300.webp",
     details: {
       location: "Marathahalli, Bangalore",
       area: "3000 sq ft",
@@ -123,11 +141,4 @@ export const projects = [
       ],
     },
   },
-];
-
-export const categories = [
-  { id: "all", label: "All Projects" },
-  { id: "residential", label: "Residential" },
-  { id: "commercial", label: "Commercial" },
-  { id: "bathroom", label: "Bathroom" },
 ];

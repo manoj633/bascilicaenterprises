@@ -59,10 +59,20 @@ export default function Gallery() {
             </p>
 
             <div className="gallery__slider-container">
-              <BeforeAfterSlider
-                beforeImage={selectedProject.beforeImage}
-                afterImage={selectedProject.afterImage}
-              />
+              {selectedProject.type === "comparison" ? (
+                <BeforeAfterSlider
+                  beforeImage={selectedProject.beforeImage}
+                  afterImage={selectedProject.afterImage}
+                />
+              ) : (
+                <div className="gallery__single-image">
+                  <img
+                    src={selectedProject.image}
+                    alt={selectedProject.title}
+                    loading="lazy"
+                  />
+                </div>
+              )}
             </div>
 
             <div className="gallery__project-info">
@@ -103,19 +113,40 @@ export default function Gallery() {
               <div
                 key={project.id}
                 className="gallery__item"
+                data-type={project.type}
                 onClick={() => handleProjectClick(project)}
               >
                 <div className="gallery__image">
                   <img
-                    src={project.thumbnailAfter}
+                    src={
+                      project.type === "comparison"
+                        ? project.thumbnailAfter
+                        : project.thumbnail
+                    }
                     alt={project.title}
                     loading="lazy"
                   />
                   <div className="gallery__overlay">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    <button className="gallery__view-btn">
-                      View Transformation
+                    <button
+                      className="gallery__view-btn"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleProjectClick(project);
+                      }}
+                    >
+                      {project.type === "comparison" ? (
+                        <>
+                          <i className="fas fa-sync-alt"></i>
+                          View Transformation
+                        </>
+                      ) : (
+                        <>
+                          <i className="fas fa-search"></i>
+                          View Details
+                        </>
+                      )}
                     </button>
                   </div>
                 </div>

@@ -9,7 +9,9 @@ export default function Hero() {
         <div className="main-content hero__content">
           <div className="hero__text">
             <h1 className="hero__title">
-              <span className="hero__title-main">Professional Waterproofing</span>
+              <span className="hero__title-main">
+                Professional Waterproofing
+              </span>
               <span className="hero__title-sub">Services in India</span>
             </h1>
             <p className="hero__description">
@@ -18,7 +20,9 @@ export default function Hero() {
               with cutting-edge solutions.
             </p>
             <div className="hero__cta">
-              <a href="#contact" className="btn btn--primary">Get Free Consultation</a>
+              <a href="#contact" className="btn btn--primary">
+                Get Free Consultation
+              </a>
               <a href="tel:6360797525" className="btn btn--secondary">
                 <i className="fas fa-phone"></i>
                 Call Now
@@ -29,7 +33,7 @@ export default function Hero() {
           <div className="hero__image">
             <div className="hero__image-container">
               <img
-                src="/attached_assets/generated_images/Hero_waterproofing_professional_image_66817831.png"
+                src="/images/heroes/Hero_waterproofing_professional_image_66817831.png"
                 alt="Professional waterproofing services"
                 className="hero__img"
                 id="heroImage"
