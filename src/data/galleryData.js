@@ -4,7 +4,8 @@ export const projects = [
     id: 1,
     type: "comparison",
     title: "Residential Roof Waterproofing",
-    description: "Complete terrace waterproofing solution with 10-year guarantee",
+    description:
+      "Complete terrace waterproofing solution with 10-year guarantee",
     category: "residential",
     beforeImage: "/images/projects/residential/before-large.webp",
     afterImage: "/images/projects/residential/after-large.webp",
@@ -52,11 +53,7 @@ export const projects = [
       location: "Indiranagar, Bangalore",
       area: "200 sq ft",
       duration: "3 days",
-      features: [
-        "Step waterproofing",
-        "Joint grouting",
-        "Surface protection",
-      ],
+      features: ["Step waterproofing", "Joint grouting", "Surface protection"],
     },
   },
   // Commercial Projects
@@ -149,7 +146,8 @@ export const projects = [
     description: "Multi-layer terrace waterproofing system",
     category: "residential",
     image: "/images/projects/residential/terrace-waterproofing-1-large.webp",
-    thumbnail: "/images/projects/residential/terrace-waterproofing-1-small.webp",
+    thumbnail:
+      "/images/projects/residential/terrace-waterproofing-1-small.webp",
     details: {
       location: "HSR Layout, Bangalore",
       area: "2200 sq ft",
@@ -187,7 +185,8 @@ export const projects = [
     description: "State-of-the-art waterproofing application",
     category: "residential",
     image: "/images/projects/residential/terrace-waterproofing-2-large.webp",
-    thumbnail: "/images/projects/residential/terrace-waterproofing-2-small.webp",
+    thumbnail:
+      "/images/projects/residential/terrace-waterproofing-2-small.webp",
     details: {
       location: "Jayanagar, Bangalore",
       area: "2500 sq ft",
@@ -206,7 +205,8 @@ export const projects = [
     description: "Premium terrace protection solution",
     category: "residential",
     image: "/images/projects/residential/terrace-waterproofing-3-large.webp",
-    thumbnail: "/images/projects/residential/terrace-waterproofing-3-small.webp",
+    thumbnail:
+      "/images/projects/residential/terrace-waterproofing-3-small.webp",
     details: {
       location: "Malleshwaram, Bangalore",
       area: "1900 sq ft",
@@ -225,7 +225,8 @@ export const projects = [
     description: "Full-spectrum terrace waterproofing treatment",
     category: "residential",
     image: "/images/projects/residential/terrace-waterproofing-4-large.webp",
-    thumbnail: "/images/projects/residential/terrace-waterproofing-4-small.webp",
+    thumbnail:
+      "/images/projects/residential/terrace-waterproofing-4-small.webp",
     details: {
       location: "RT Nagar, Bangalore",
       area: "2100 sq ft",
@@ -257,7 +258,7 @@ export const projects = [
         "Complete moisture protection",
       ],
     },
-  }
+  },
 ];
 
 export const categories = [
