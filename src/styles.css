@@ -1617,3 +1617,132 @@ body {
         height: 36px;
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Improve global line spacing and readability */
+    body {
+        line-height: 1.7;
+        font-size: 15px;
+    }
+
+    /* Reduce heavy padding on multi-column grids */
+    .services__grid,
+    .gallery__grid,
+    .testimonials__slider {
+        gap: var(--spacing-md);
+    }
+
+    /* Hero image height adjustment */
+    .hero__img {
+        height: 280px;
+    }
+
+    /* Adjust hero title spacing */
+    .hero__title-main {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Contact form spacing */
+    .contact__form {
+        padding: var(--spacing-lg);
+    }
+
+    /* Contact info items stacked better */
+    .contact__item {
+        align-items: center;
+    }
+
+    /* Footer spacing improvements */
+    .footer {
+        padding: var(--spacing-xl) 0;
+    }
+}
+
+/* Extra-compact screens < 480px */
+@media (max-width: 480px) {
+
+    /* More fluid headings */
+    .section__title-main {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .hero__title-main {
+        font-size: 1.7rem;
+    }
+
+    .hero__title-sub {
+        font-size: 1.3rem;
+    }
+
+    /* Better button sizing for thumb tap targets */
+    .btn {
+        padding: 14px 18px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    /* Reduce shadow intensity on mobile for performance */
+    .service-card,
+    .gallery__item,
+    .testimonial {
+        box-shadow: var(--shadow-light);
+    }
+
+    /* Cards padding optimize */
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+
+    /* Modal mobile improvements */
+    .modal-dialog {
+        border-radius: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .modal-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .modal-title {
+        font-size: 1rem;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-close {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Image responsiveness fix */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Safe text wrapping everywhere */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    word-break: break-word;
+}
+
+/* Touch-friendly tap areas */
+button,
+a,
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
