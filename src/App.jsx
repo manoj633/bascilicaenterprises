@@ -9,6 +9,8 @@ import Testimonials from "./components/Testimonials";
 import GoogleReviews from "./components/GoogleReviews";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+
 import "./styles.css";
 
 function App() {
@@ -72,6 +74,7 @@ function App() {
       <WhyChoose />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

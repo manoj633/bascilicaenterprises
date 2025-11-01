@@ -1746,3 +1746,108 @@ textarea {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
 }
+
+/* Wrapper ensures correct stacking */
+.whatsapp-wrapper {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1500;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+    background: #25d366;
+    color: #fff;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover animation (desktop) */
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.07);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background: #000;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    white-space: nowrap;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+}
+
+/* Subtle pulsing wave (WhatsApp style) */
+.whatsapp-ping {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #25d366;
+    opacity: 0.35;
+    animation: ping 2s infinite;
+    z-index: -1;
+}
+
+/* Pulse animation */
+@keyframes ping {
+    0% {
+        transform: scale(1);
+        opacity: 0.35;
+    }
+
+    70% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+    .whatsapp-wrapper {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float {
+        width: 54px;
+        height: 54px;
+        font-size: 26px;
+    }
+
+    .whatsapp-ping {
+        width: 54px;
+        height: 54px;
+    }
+
+    .whatsapp-tooltip {
+        display: none;
+        /* Hide tooltip for mobile */
+    }
+}
