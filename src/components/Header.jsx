@@ -130,9 +130,9 @@ export default function Header() {
             </div>
 
             <div className="header__actions">
-              <a href="tel:6360797525" className="header__phone">
+              <a href="tel:9901856358" className="header__phone">
                 <i className="fas fa-phone"></i>
-                <span>6360797525</span>
+                <span>9901856358</span>
               </a>
               <button
                 className="header__menu-toggle"

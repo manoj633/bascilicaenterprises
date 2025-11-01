@@ -17,11 +17,21 @@ export default function Footer() {
             <div className="footer__links">
               <h4>Quick Links</h4>
               <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </div>
 
@@ -40,7 +50,7 @@ export default function Footer() {
               <h4>Contact Info</h4>
               <div className="footer__contact-item">
                 <i className="fas fa-phone"></i>
-                <span>6360797525 / 9901856358</span>
+                <span>9901856358</span>
               </div>
               <div className="footer__contact-item">
                 <i className="fas fa-envelope"></i>

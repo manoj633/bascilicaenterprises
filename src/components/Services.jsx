@@ -186,6 +186,52 @@ Benefits:
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
+    {
+      icon: "fa-utensils",
+      title: "Kitchen & Utility Area",
+      description:
+        "Waterproofing solutions for kitchen, sink, and utility wash areas to prevent leakage and dampness.",
+      details: `Our Kitchen & Utility Area Waterproofing includes:
+
+• Under-tile waterproof membrane application  
+• Sink and countertop joint sealing  
+• Pipe outlet & inlet penetration waterproofing  
+• Floor trap & drain area reinforcement  
+• High-moisture zone chemical coating  
+• Anti-fungal & anti-bacterial protection  
+
+Benefits:  
+✓ Prevents seepage to lower floors  
+✓ Stops mold formation behind kitchen tiles  
+✓ Protects cabinets from moisture damage  
+✓ Ensures long-term hygiene  
+✓ 5-year leakage protection warranty`,
+      image:
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+    },
+    {
+      icon: "fa-door-open",
+      title: "Balcony",
+      description:
+        "Professional balcony waterproofing to prevent seepage, cracks, and dripping issues.",
+      details: `Our Balcony Waterproofing System includes:
+
+• Slope correction for proper drainage  
+• Crack filling & joint sealing  
+• Waterproof coating under tile system  
+• Drain area sealing & reinforcement  
+• UV-resistant top coat application  
+• Anti-skid protective finishing  
+
+Benefits:  
+✓ Eliminates balcony-to-wall seepage  
+✓ Prevents dampness in adjacent rooms  
+✓ UV and weather resistant  
+✓ Ensures proper water flow  
+✓ 6-year waterproofing warranty`,
+      image:
+        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+    },
   ];
 
   return (
