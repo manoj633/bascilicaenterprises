@@ -25,7 +25,7 @@ Benefits:
 ✓ Extends roof life by 10-15 years
 ✓ Prevents internal wall dampness
 ✓ Energy-efficient cooling due to heat reflection
-✓ 5-year warranty on workmanship`,
+✓ 1-year warranty on workmanship`,
       image: "/images/optimized/terrace-waterproofing-1-600x450.webp",
     },
     {
@@ -47,7 +47,7 @@ Benefits:
 ✓ Prevents tile debonding
 ✓ Stops mold and mildew growth
 ✓ Protects underlying structure
-✓ 7-year performance warranty`,
+✓ 1-year performance warranty`,
       image: "/images/optimized/bathroom-waterproofing-1-600x450.webp",
     },
     {
@@ -69,7 +69,7 @@ Benefits:
 ✓ Allows wall breathing
 ✓ Reduces maintenance costs
 ✓ Improves building aesthetics
-✓ 3-year protection guarantee`,
+✓ 1-year protection guarantee`,
       image: "/images/optimized/external-wall-1-600x450.webp",
     },
     {
@@ -91,7 +91,7 @@ Benefits:
 ✓ Prevents water contamination
 ✓ Stops leakage completely
 ✓ Easy maintenance
-✓ 5-year durability guarantee`,
+✓ 1-year durability guarantee`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -114,7 +114,7 @@ Benefits:
 ✓ Chemical-resistant finish
 ✓ UV and chlorine resistant
 ✓ Crack-bridging capability
-✓ 10-year service life`,
+✓ 1-year service life`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -136,7 +136,7 @@ Benefits:
 ✓ Proper water drainage
 ✓ Supports healthy plant growth
 ✓ Protects building structure
-✓ Long-term durability`,
+✓ 1-year durability guarantee`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -159,7 +159,7 @@ Benefits:
 ✓ Permanent crack solution
 ✓ Chemical resistant
 ✓ Fast curing time
-✓ Lifetime warranty`,
+✓ 1-year warranty`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -182,7 +182,7 @@ Benefits:
 ✓ Flexible after curing
 ✓ Deep penetration
 ✓ Non-destructive application
-✓ 3-year warranty`,
+✓ 1-year warranty`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -205,7 +205,7 @@ Benefits:
 ✓ Stops mold formation behind kitchen tiles  
 ✓ Protects cabinets from moisture damage  
 ✓ Ensures long-term hygiene  
-✓ 5-year leakage protection warranty`,
+✓ 1-year leakage protection warranty`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -228,7 +228,7 @@ Benefits:
 ✓ Prevents dampness in adjacent rooms  
 ✓ UV and weather resistant  
 ✓ Ensures proper water flow  
-✓ 6-year waterproofing warranty`,
+✓ 1-year waterproofing warranty`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
