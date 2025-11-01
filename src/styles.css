@@ -1570,3 +1570,50 @@ body {
         line-height: 1.6;
     }
 }
+
+@keyframes modalSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-dialog {
+    animation: modalSlideUp 0.35s ease-out;
+}
+
+.body-no-scroll {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 12px;
+    }
+
+    .modal-body {
+        padding: 1rem !important;
+    }
+
+    .modal-content {
+        padding: 1rem !important;
+    }
+
+    .modal-title {
+        font-size: 1.1rem;
+    }
+
+    .modal-close {
+        width: 36px;
+        height: 36px;
+    }
+}

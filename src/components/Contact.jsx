@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,6 +9,16 @@ export default function Contact() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const [showVisitChargeModal, setShowVisitChargeModal] = useState(false);
+
+  useEffect(() => {
+    if (showVisitChargeModal) {
+      document.body.classList.add("body-no-scroll");
+    } else {
+      document.body.classList.remove("body-no-scroll");
+    }
+  }, [showVisitChargeModal]);
 
   const handleChange = (e) => {
     setFormData({
@@ -124,7 +134,14 @@ export default function Contact() {
           </div>
 
           <div className="contact__form">
-            <form className="form" id="contactForm" onSubmit={handleSubmit}>
+            <form
+              className="form"
+              id="contactForm"
+              onSubmit={(e) => {
+                e.preventDefault();
+                setShowVisitChargeModal(true);
+              }}
+            >
               <div className="form__group">
                 <label htmlFor="name" className="form__label">
                   Full Name
@@ -217,10 +234,81 @@ export default function Contact() {
               >
                 {isSubmitting ? "Sending..." : "Get Free Consultation"}
               </button>
+              <p
+                style={{
+                  marginTop: "0.75rem",
+                  fontSize: "0.9rem",
+                  color: "var(--medium-gray)",
+                  textAlign: "center",
+                }}
+              >
+                * A visiting charge of ₹350 applies — fully deductible from
+                project cost.
+              </p>
             </form>
           </div>
         </div>
       </div>
+      {showVisitChargeModal && (
+        <div
+          className="modal-overlay"
+          onClick={() => setShowVisitChargeModal(false)}
+        >
+          <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3 className="modal-title">
+                <i className="fas fa-info-circle modal-title-icon"></i>
+                Important Notice
+              </h3>
+              <button
+                className="modal-close"
+                onClick={() => setShowVisitChargeModal(false)}
+              >
+                <span className="modal-close-icon">
+                  <i className="fas fa-times"></i>
+                </span>
+              </button>
+            </div>
+
+            <div className="modal-body">
+              <div className="modal-content">
+                <p>
+                  A visiting charge of <strong>₹350</strong> applies for
+                  inspection and consultation. This amount is{" "}
+                  <strong>fully deductible</strong> from your total project cost
+                  if you confirm the work with us.
+                </p>
+
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    gap: "1rem",
+                    marginTop: "2rem",
+                  }}
+                >
+                  <button
+                    className="btn btn--secondary"
+                    onClick={() => setShowVisitChargeModal(false)}
+                  >
+                    Cancel
+                  </button>
+
+                  <button
+                    className="btn btn--primary"
+                    onClick={() => {
+                      setShowVisitChargeModal(false);
+                      handleSubmit({ preventDefault: () => {} });
+                    }}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
