@@ -104,6 +104,8 @@ async function processDirectory(inputDir, outputDir, isGallery = false) {
         // Process images
         if (isGallery) {
           await processGalleryImage(inputPath, outputDir);
+        } else if (inputDir.includes("testimonials")) {
+          await processTestimonialImage(inputPath, outputDir);
         } else {
           await processRegularImage(inputPath, outputDir);
         }
@@ -126,7 +128,7 @@ async function main() {
   await processDirectory(projectsDir, projectsDir, true);
 
   // Process other directories with regular sizes
-  const otherDirs = ["equipment", "heroes", "team"];
+  const otherDirs = ["equipment", "heroes", "team", "testimonials"];
   for (const dir of otherDirs) {
     const inputDir = path.join(baseInputDir, dir);
     console.log(`\nProcessing ${dir} images...`);
@@ -134,6 +136,24 @@ async function main() {
   }
 
   console.log("\nOptimization complete! ✨");
+}
+
+const testimonialSizes = {
+  display: { width: 800, height: 600 }, // or whatever fits your layout
+};
+async function processTestimonialImage(inputPath, outputDir) {
+  const filename = path.basename(inputPath);
+  const nameWithoutExt = path.parse(filename).name;
+
+  await ensureDir(outputDir);
+
+  for (const [sizeName, dimensions] of Object.entries(testimonialSizes)) {
+    const outputPath = path.join(
+      outputDir,
+      `${nameWithoutExt}-${sizeName}.webp`
+    );
+    await optimizeImage(inputPath, outputPath, dimensions);
+  }
 }
 
 // Run the optimization
