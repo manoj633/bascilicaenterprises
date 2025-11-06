@@ -14,7 +14,6 @@ export default function Services() {
       details: `Our Roof Terrace Waterproofing Service includes:
 
 • Advanced membrane application using high-grade polymeric materials
-• Anti-root barrier installation for terrace gardens
 • UV-resistant coating for extended durability
 • Proper drainage system integration
 • Joint and crack sealing treatment
@@ -25,7 +24,10 @@ Benefits:
 ✓ Extends roof life by 10-15 years
 ✓ Prevents internal wall dampness
 ✓ Energy-efficient cooling due to heat reflection
-✓ 1-year warranty on workmanship`,
+✓ 1-year warranty on workmanship
+
+Additional Expertise:
+Our organization is one of the leading and most promising service providers for water leakage solutions. We have established strong business rapport with trusted sanitary and leakage solution partners, known for high-grade quality service and timely completion. We ensure every terrace waterproofing project is completed with the same commitment to quality and precision.`,
       image: "/images/optimized/terrace-waterproofing-1-600x450.webp",
     },
     {
@@ -36,7 +38,7 @@ Benefits:
       details: `Our Bathroom Waterproofing Solutions include:
 
 • Under-tile waterproofing membrane application
-• Shower area special treatment
+• Shower area special treatmen
 • Pipe penetration sealing
 • Floor-wall joint waterproofing
 • Drain area reinforcement
@@ -47,7 +49,13 @@ Benefits:
 ✓ Prevents tile debonding
 ✓ Stops mold and mildew growth
 ✓ Protects underlying structure
-✓ 1-year performance warranty`,
+✓ 1-year performance warranty
+
+Additional Details:
+We offer professional bathroom waterproofing services in Pune, Mumbai, Bangalore, Delhi (Opening Shortly), Aurangabad, Nashik, and Hyderabad.  
+Wet and damp areas, bathrooms, and laundries are critical zones that must be waterproofed to prevent serious damage to nearby bedrooms or living areas.  
+We specialize in backflow water removal technology and ensure complete sanitary waterproofing as part of our comprehensive home waterproofing solution.  
+Our commitment: fully water-tight bathrooms, engineered to deliver durable, value-for-money results.`,
       image: "/images/optimized/bathroom-waterproofing-1-600x450.webp",
     },
     {
@@ -69,7 +77,10 @@ Benefits:
 ✓ Allows wall breathing
 ✓ Reduces maintenance costs
 ✓ Improves building aesthetics
-✓ 1-year protection guarantee`,
+✓ 1-year protection guarantee
+
+Note:
+Our leak detection and wall seepage repair process is informed by our expertise in leakage root cause analysis, ensuring precise treatment and long-term protection.`,
       image: "/images/optimized/external-wall-1-600x450.webp",
     },
     {
@@ -159,7 +170,10 @@ Benefits:
 ✓ Permanent crack solution
 ✓ Chemical resistant
 ✓ Fast curing time
-✓ 1-year warranty`,
+✓ 1-year warranty
+
+Additional Expertise:
+Our leakage solution division ensures every epoxy repair aligns with site-specific seepage and crack patterns, leading to superior and long-lasting results.`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
@@ -182,7 +196,9 @@ Benefits:
 ✓ Flexible after curing
 ✓ Deep penetration
 ✓ Non-destructive application
-✓ 1-year warranty`,
+✓ 1-year warranty
+
+This service complements our full range of leakage repair and waterproofing solutions, addressing both active and passive water ingress efficiently.`,
       image:
         "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
     },
