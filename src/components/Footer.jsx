@@ -50,7 +50,7 @@ export default function Footer() {
               <h4>Contact Info</h4>
               <div className="footer__contact-item">
                 <i className="fas fa-phone"></i>
-                <span>9901856358</span>
+                <span>9901856358 / 6360797525</span>
               </div>
               <div className="footer__contact-item">
                 <i className="fas fa-envelope"></i>

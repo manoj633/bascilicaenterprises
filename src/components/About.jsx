@@ -66,7 +66,7 @@ export default function About() {
           <div className="about__images">
             <div className="about__image">
               <img
-                src="/images/team/About_us_team_photo.png"
+                src="/images/projects/commercial/water-proofing-terrace.png"
                 alt="Professional waterproofing team"
                 className="about__img"
                 id="aboutImage"
@@ -74,7 +74,7 @@ export default function About() {
             </div>
             <div className="about__image">
               <img
-                src="/images/equipment/Professional_waterproofing_tools_and_equipment.png"
+                src="/images/projects/commercial/after-1.png"
                 alt="Professional waterproofing tools and equipment"
                 className="about__img"
                 id="aboutImage2"

@@ -23,7 +23,10 @@ export default function Hero() {
               <a href="#contact" className="btn btn--primary">
                 Get Free Consultation
               </a>
-              <a href="tel:9901856358" className="btn btn--secondary">
+              <a
+                href="tel:9901856358 / 6360797525"
+                className="btn btn--secondary"
+              >
                 <i className="fas fa-phone"></i>
                 Call Now
               </a>

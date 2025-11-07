@@ -91,7 +91,7 @@ export default function Contact() {
                 </div>
                 <div className="contact__text">
                   <h3>Call Us</h3>
-                  <p>9901856358</p>
+                  <p>9901856358 / 6360797525</p>
                 </div>
               </div>
 

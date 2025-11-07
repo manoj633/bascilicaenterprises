@@ -266,6 +266,10 @@ Benefits:
             We provide comprehensive waterproofing services for all areas of
             your building, ensuring complete protection against water damage.
           </p>
+          <span className="section__title-sub">
+            Experience <b>seamless waterproofing with zero tile breakage</b> —
+            preserving your interiors while providing long-lasting protection.
+          </span>
         </div>
 
         <div className="services__grid">
