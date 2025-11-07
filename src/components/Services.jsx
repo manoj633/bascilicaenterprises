@@ -222,8 +222,7 @@ Benefits:
 ✓ Protects cabinets from moisture damage  
 ✓ Ensures long-term hygiene  
 ✓ 1-year leakage protection warranty`,
-      image:
-        "/images/optimized/Professional_waterproofing_tools_and_equipment_c54a2057-600x450.webp",
+      image: "/images/projects/residential/kitchen-sink-work-large.webp",
     },
     {
       icon: "fa-door-open",
