@@ -56,7 +56,7 @@ We offer professional bathroom waterproofing services in Pune, Mumbai, Bangalore
 Wet and damp areas, bathrooms, and laundries are critical zones that must be waterproofed to prevent serious damage to nearby bedrooms or living areas.  
 We specialize in backflow water removal technology and ensure complete sanitary waterproofing as part of our comprehensive home waterproofing solution.  
 Our commitment: fully water-tight bathrooms, engineered to deliver durable, value-for-money results.`,
-      image: "/images/optimized/bathroom-waterproofing-1-600x450.webp",
+      image: "/images/projects/bathroom/toilet-1-large.webp",
     },
     {
       icon: "fa-building",
